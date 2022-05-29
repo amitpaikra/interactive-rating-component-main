@@ -5,3 +5,16 @@ submitButton.addEventListener("click", ()=>{
 
 });
 
+const listLi = document.getElementsByTagName("li");
+
+
+
+for( let i = 0; i < listLi.length; i++ ){
+  
+    listLi[i].addEventListener("click", ()=>{
+        listLi[i].style.background = "Orange";
+        document.getElementsByTagName("changeValue")[0].innerHTML = `${i+1}`;
+        
+    })
+}
+ 
